@@ -6,6 +6,7 @@ time = prompt ('Введите дату в формате YYYY-MM-DD', '2019-08-
 
 var timeData = time;
 document.write(money);
+document.write(time);
 
 var expenses, optionalExpenses, income;
 
