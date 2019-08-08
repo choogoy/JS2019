@@ -19,6 +19,7 @@ var appData = {
 
 console.log(appData.expenses);
 
+push.appData.
 push.appData.expenses[0] = prompt ('Введите обязательную статью расходов в этом месяце', 'Продукты');
 
 push.expenses[1] = prompt ('Во сколько обойдется?', 15000);
