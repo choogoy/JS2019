@@ -5,6 +5,7 @@ money = prompt ('Ваш бюджет на месяц?', 25000);
 time = prompt ('Введите дату в формате YYYY-MM-DD', '2019-08-08');
 
 var timeData = time;
+document.write(money);
 
 var expenses, optionalExpenses, income;
 
