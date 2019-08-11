@@ -29,12 +29,12 @@ let err = 0; //счетик количества неправильных вво
     }
 } */
 
-while (i < 2) {
+/*while (i < 2) {
 
     let a = prompt('Введите обязательную статью расходов в этом месяце'),
         b = prompt('Во сколько обойдется?');
             
-     if ((typeof(a))==='string' && (isFinite(a)) === false && (isFinite(b)) === true && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50) {
+    if ((typeof(a))==='string' && (isFinite(a)) === false && (isFinite(b)) === true && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50) {
         console.log('done');
 		appData.expenses[a] = b;
 		i++;
@@ -43,7 +43,26 @@ while (i < 2) {
         alert('Вводите корректные данные! Количество ошибок: ' + err);
         console.log('error: ' + err);
     }
-}
+}*/
+
+let num = 0;
+
+do {
+
+	let a = prompt('Введите обязательную статью расходов в этом месяце'),
+		b = prompt('Во сколько обойдется?');
+				   
+		if ((typeof(a))==='string' && (isFinite(a)) === false && (isFinite(b)) === true && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50) {
+			console.log('done');
+			appData.expenses[a] = b;
+			num++;
+		} else {
+	    	err++;
+        	alert('Вводите корректные данные! Количество ошибок: ' + err);
+        	console.log('error: ' + err);
+		}
+		
+	} while (num < 2)
 
 console.log(appData.expenses); // вывод в консоль объекта 'expenses'
 
